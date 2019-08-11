@@ -6,7 +6,7 @@ git config --global user.email "noreply@travis.com"
 git clone --quiet --branch=install https://adityastic:$GITHUB_API_KEY@github.com/adityastic/travis-check-pslab install > /dev/null
 cd install 
 
-find ../dist -type f \( -name '*.snap' -o -name '*.deb' -o "*.exe" \) -exec cp -v {} . \;
+find ../dist -maxdepth 1 -type f \( -name '*.snap' -o -name '*.deb' -o -name "*.exe" \) -exec cp -v {} . \;
 
 git checkout --orphan temporary
 git add --all .
