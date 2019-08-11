@@ -3,7 +3,7 @@
 git config --global user.name "Travis CI"
 git config --global user.email "noreply@travis.com"
 
-git clone --quiet --branch=install https://fossasia:$GITHUB_API_KEY@github.com/fossasia/pslab-desktop install > /dev/null
+git clone --quiet --branch=install https://adityastic:$GITHUB_API_KEY@github.com/adityastic/travis-check-pslab install > /dev/null
 cd install 
 
 rm -rf *
